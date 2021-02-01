@@ -1,0 +1,125 @@
+{
+  "name": "witcherrpg",
+  "title": "The Witcher Role-Playing Game",
+  "description": "The Witcher Role-Playing Game is a pen-and-paper role-playing game being developed by R. Talsorian Games based on CD Projekt's Witcher universe. It was first announced on July 29, 2015 on the official Witcher forums and was announced to be originally published in mid 2016. However, it was delayed for a couple years and is now slated to be released during GenCon on August 2, 2018 and for multiple languages.",
+  "version": "0.0.1",
+  "minimumCoreVersion": "0.7.9",
+  "compatibleCoreVersion": "0.7.9",
+  "author": "aysonohbata - aysonbp@gmail.com",
+  "scripts": [
+    "scripts/system-script-1.js",
+    "scripts/system-script-2.js"
+  ],
+  "styles": [
+    "styles/witcherrpg.css"
+  ],
+  "packs": [
+    {
+      "name": "pregens",
+      "label": "Pregenerated Characters",
+      "system": "witcherrpg",
+      "path": "packs/pregens.db",
+      "entity": "Actor"
+    },
+    {
+      "name": "weapons",
+      "label": "Weapons (Core)",
+      "system": "witcherrpg",
+      "path": "packs/weapons.db",
+      "entity": "Item"
+    },
+	{
+      "name": "armors",
+      "label": "Armors (Core)",
+      "system": "witcherrpg",
+      "path": "packs/armors.db",
+      "entity": "Item"
+    },
+	{
+      "name": "alchemicalitems",
+      "label": "Alchemical Items (Core)",
+      "system": "witcherrpg",
+      "path": "packs/alchemicalitems.db",
+      "entity": "Item"
+    },
+	{
+      "name": "transportation",
+      "label": "Transportation (Core)",
+      "system": "witcherrpg",
+      "path": "packs/transportation.db",
+      "entity": "Item"
+    },
+	{
+      "name": "toolkits",
+      "label": "Toolkits (Core)",
+      "system": "witcherrpg",
+      "path": "packs/toolkits.db",
+      "entity": "Item"
+    },
+	{
+      "name": "generalgear",
+      "label": "General Gear (Core)",
+      "system": "witcherrpg",
+      "path": "packs/generalgear.db",
+      "entity": "Item"
+    },
+	{
+      "name": "spells",
+      "label": "Spells (Core)",
+      "system": "witcherrpg",
+      "path": "packs/spells.db",
+      "entity": "Item"
+    },
+	{
+      "name": "craftingcomponents",
+      "label": "Crafting Components (Core)",
+      "system": "witcherrpg",
+      "path": "packs/craftingcomponents.db",
+      "entity": "Item"
+    },
+	{
+      "name": "alchemicalsubs",
+      "label": "Alchemical Substances (Core)",
+      "system": "witcherrpg",
+      "path": "packs/alchemicalsubs.db",
+      "entity": "Item"
+    },
+	{
+      "name": "races",
+      "label": "Races (Core)",
+      "system": "witcherrpg",
+      "path": "packs/races.db",
+      "entity": "Item"
+    },
+	{
+      "name": "professions",
+      "label": "Professions (Core)",
+      "system": "witcherrpg",
+      "path": "packs/professions.db",
+      "entity": "Item"
+    },
+	{
+      "name": "skilltree",
+      "label": "Skill Tree (Core)",
+      "system": "witcherrpg",
+      "path": "packs/skilltree.db",
+      "entity": "Item"
+    }
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "socket": true,
+  "initiative": "1d10",
+  "gridDistance": 1.5,
+  "gridUnits": "meters",
+  "primaryTokenAttribute": "resources.health",
+  "secondaryTokenAttribute": "resources.stamina",
+  "url": "https://your/hosted/system/repo/",
+  "manifest": "https://your/hosted/system/repo/system.json",
+  "download": "https://your/packaged/download/archive.zip"
+}
