@@ -80,11 +80,11 @@
 					},
 					"enc": {
 						"value": 0,
-						"min": 0
+						"min": 0,
 					},
 					"recover": {
 						"min": 0,
-						"value": 0
+						"value": 0,
 					}
 					},
 					"skills": {
@@ -343,70 +343,26 @@
 							"value": 0,
 							"max": 10
 						  }
-				},
-					"details": {
-						"biography": {
-						"value": "",
-						"public": ""
-						}
-					},
-					"currency": {
-						  "temerianoren": 0,
-						  "nifgaardianfloren": 0,
-						  "ducats": 0,
-						  "bizant": 0,
-						  "lintar": 0
-						}
+				}
 			},
 			"npc":{
 					"templates":[
-						"coreStats"
+						"coreStats" 
 					]
 				},
 			"monsters":{
-					"templates":[
+					"templates"[
 						"coreStats",
 						"derivedStats"
 					]
 				},
 			"playercharacter":{
-					"templates":[
+					"templates"[
 						"coreStats",
 						"derivedStats",
 						"skills",
 						"currency",
-						"weapons"]
-            }
-        },
-	"Item":{
-		"types":[
-			"weapons",
-			"armor"
-		],
-			"weapons":{
-						"swords":{
-							"swordName": "",
-							"swordType": "",
-							"swordWA": 0,
-							"swordRel": 0,
-							"swordHand": "",
-							"swordRange": "",
-							"swordEffect": "",
-							"swordConc": "",
-							"swordEN": 0,
-							"swordWeight": 0
-							}
-						},
-			"armor":{
-						"lightHeadArmor":{
-							"lightHeadArmorName": "",
-							"lightHeadArmorSP": 0,
-							"lightHeadArmorAE": 0,
-							"lightHeadArmorEffect": "",
-							"lightHeadArmorEV": 0,
-							"lightHeadArmorWeight": 0,
-							"lightHeadArmorPrice": 0
-							}
-						}
-	}
+						"weapons"
+			}
+		},
 }

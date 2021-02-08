@@ -1,0 +1,17 @@
+{
+	"witcherrpg":{
+		"coreStats":
+		{
+			"intelligence": "Intelligence",
+			"reflex": "Reflex",
+			"dexterity": "Dexterity",
+			"body": "Body",
+			"empathy": "Empathy",
+			"craft": "Craft",
+			"will": "Will"
+		},
+		"derivedStats"{
+			"alchemy" = "Alchemy"
+		}
+	}
+}
