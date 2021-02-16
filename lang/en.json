@@ -1,0 +1,31 @@
+{
+	"witcherrpg":{
+		"coreStats":
+		{
+			"intelligence": "Intelligence",
+			"reflex": "Reflex",
+			"dexterity": "Dexterity",
+			"body": "Body",
+			"empathy": "Empathy",
+			"craft": "Craft",
+			"will": "Will"
+		},
+		"derivedStats":{
+			"alchemy": "Alchemy"
+		},
+		"item":{
+			"none": "",
+			"swordName": "Name",
+			"swordType": "Type",
+			"swordWA": "Weapon Accuracy",
+			"swordRel": "Reliability",
+			"swordHand": "Hands Required",
+			"swordRange": "Range",
+			"swordEffect": "Effect",
+			"swordConc": "Concealment",
+			"swordEN": "Enhancements",
+			"swordWeight": "Weight"
+		}
+
+	}
+}

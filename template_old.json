@@ -3,8 +3,8 @@
 		"types":[
 			"playercharacter", 
 			"npc", 
-			"mount", 
-			"monster"
+			"mounts", 
+			"monsters"
 		],
 			"templates":{
 			        "coreStats": {
@@ -13,7 +13,7 @@
 						"value": 0,
 						"max": 10
 					},
-						"ref": {
+					"ref": {
 						"min": 0,
 						"value": 0,
 						"max": 10
@@ -80,15 +80,11 @@
 					},
 					"enc": {
 						"value": 0,
-						"min": 0
+						"min": 0,
 					},
 					"recover": {
 						"min": 0,
-						"value": 0
-					},
-					"resolve":{
-						"min": 0,
-						"value": 0
+						"value": 0,
 					}
 					},
 					"skills": {
@@ -347,168 +343,26 @@
 							"value": 0,
 							"max": 10
 						  }
-					},
-					"coreDetails": {
-						"biography": {
-							"value": ""
-						},
-						"racetypes": {
-							"value": ""
-						},
-						"raceperks00":{
-							"value": ""
-						},
-						"raceperks01":{
-							"value": ""
-						},
-						"raceperks02":{
-							"value": ""
-						},
-						"raceperks03":{
-							"value": ""
-						}
-					},
-					"characteristics":{
-						"age": {
-							"value": 0
-						},
-						"clothing": {
-							"value": ""
-						},
-						"personality": {
-							"value": ""
-						},
-						"hair-style": {
-							"value": ""
-						},
-						"affectations": {
-							"value": ""
-						},
-						"valued-person": {
-							"value": ""
-						},
-						"value": {
-							"value": ""
-						},
-						"feelings": {
-							"value": ""
-						}
-					},
-					"currency": {
-						  "temerianoren": 0,
-						  "nifgaardianfloren": 0,
-						  "ducats": 0,
-						  "bizant": 0,
-						  "lintar": 0
-					},
-					"perks":{
-
-					},
-					"key-skills":{
-
-					},
-					"armor":{
-						"headArmor": 0,
-						"torsoArmor": 0,
-						"rightArmArmor": 0,
-						"leftArmArmor": 0,
-						"rightLegArmor": 0,
-						"leftLegArmor": 0
-					},
-					"monsterArmor":{
-						"monsterBaseArmor": 0,
-						"resistances": "",
-						"regeneration":0,
-						"susceptibilities":""
-					},
-					"monsterBase":{
-						"dodgeBase":0,
-						"repositionBase":0,
-						"blockBase":0
-					},
-					"attacks":{
-						"attackPrimary":{
-							"value": ""
-						},
-						"attackBackup":{
-							"value": ""			
-						}
-					},
-					"abilities":{
-						"ability00":{
-							"value": ""
-						}
-					}
+				}
 			},
-			"playercharacter":{
+			"npc":{
 					"templates":[
+						"coreStats" 
+					]
+				},
+			"monsters":{
+					"templates"[
+						"coreStats",
+						"derivedStats"
+					]
+				},
+			"playercharacter":{
+					"templates"[
 						"coreStats",
 						"derivedStats",
 						"skills",
-						"coreDetails",
-						"characteristics",
 						"currency",
-						"perks",
-						"key-skills"
-					],
-					"profession": {
-						"value": ""
-					},
-					"social standing":{
-						"value": ""
-					}
-            },
-			"mount":{
-				"templates":[
-					"coreStats",
-					"derivedStats",
-					"skills",
-					"attacks",
-					"abiilities",
-					"monsterArmor"
-				]
-			},
-			"monsters":{
-				"templates":[
-					"coreStats",
-					"derivedStats",
-					"skills",
-					"monsterArmor",
-					"monsterBase",
-					"attacks",
-					"abiilities"
-				]
+						"weapons"
 			}
-        },
-	"Item":{
-		"types":[
-			"weapon",
-			"armor"
-		],
-			"weapon":{
-						"swords":{
-							"swordName": "",
-							"swordType": "",
-							"swordWA": 0,
-							"swordRel": 0,
-							"swordHand": "",
-							"swordRange": "",
-							"swordEffect": "",
-							"swordConc": "",
-							"swordEN": 0,
-							"swordWeight": 0
-							}
-						},
-			"armor":{
-						"lightHeadArmor":{
-							"lightHeadArmorName": "",
-							"lightHeadArmorSP": 0,
-							"lightHeadArmorAE": 0,
-							"lightHeadArmorEffect": "",
-							"lightHeadArmorEV": 0,
-							"lightHeadArmorWeight": 0,
-							"lightHeadArmorPrice": 0
-							}
-						}
-	}
+		},
 }
