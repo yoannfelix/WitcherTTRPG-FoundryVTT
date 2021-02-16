@@ -6,10 +6,20 @@
   "minimumCoreVersion": "0.7.9",
   "compatibleCoreVersion": "0.7.9",
   "author": "aysonohbata",
-  "scripts": [],
-  "styles": [],
+  "esmodules": [
+      "witcherrpg.js"
+  ],
+  "styles": [
+      "witcherrpg.css"
+  ],
   "packs": [],
-  "languages": [],
+  "languages": [
+      {
+        "lang": "en",
+        "name": "English",
+        "path": "lang/en.json/"
+      }
+  ],
   "socket": true,
   "initiative": "1d10 + @reflex",
   "gridDistance": 1.5,

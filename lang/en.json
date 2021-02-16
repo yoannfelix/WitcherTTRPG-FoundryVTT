@@ -10,8 +10,22 @@
 			"craft": "Craft",
 			"will": "Will"
 		},
-		"derivedStats"{
-			"alchemy" = "Alchemy"
+		"derivedStats":{
+			"alchemy": "Alchemy"
+		},
+		"item":{
+			"none": "",
+			"swordName": "Name",
+			"swordType": "Type",
+			"swordWA": "Weapon Accuracy",
+			"swordRel": "Reliability",
+			"swordHand": "Hands Required",
+			"swordRange": "Range",
+			"swordEffect": "Effect",
+			"swordConc": "Concealment",
+			"swordEN": "Enhancements",
+			"swordWeight": "Weight"
 		}
+
 	}
 }

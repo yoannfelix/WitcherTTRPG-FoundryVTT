@@ -3,8 +3,8 @@
 		"types":[
 			"playercharacter", 
 			"npc", 
-			"mounts", 
-			"monsters"
+			"mount", 
+			"monster"
 		],
 			"templates":{
 			        "coreStats": {
@@ -13,7 +13,7 @@
 						"value": 0,
 						"max": 10
 					},
-					"ref": {
+						"ref": {
 						"min": 0,
 						"value": 0,
 						"max": 10
@@ -83,6 +83,10 @@
 						"min": 0
 					},
 					"recover": {
+						"min": 0,
+						"value": 0
+					},
+					"resolve":{
 						"min": 0,
 						"value": 0
 					}
@@ -343,11 +347,51 @@
 							"value": 0,
 							"max": 10
 						  }
-				},
-					"details": {
+					},
+					"coreDetails": {
 						"biography": {
-						"value": "",
-						"public": ""
+							"value": ""
+						},
+						"racetypes": {
+							"value": ""
+						},
+						"raceperks00":{
+							"value": ""
+						},
+						"raceperks01":{
+							"value": ""
+						},
+						"raceperks02":{
+							"value": ""
+						},
+						"raceperks03":{
+							"value": ""
+						}
+					},
+					"characteristics":{
+						"age": {
+							"value": 0
+						},
+						"clothing": {
+							"value": ""
+						},
+						"personality": {
+							"value": ""
+						},
+						"hair-style": {
+							"value": ""
+						},
+						"affectations": {
+							"value": ""
+						},
+						"valued-person": {
+							"value": ""
+						},
+						"value": {
+							"value": ""
+						},
+						"feelings": {
+							"value": ""
 						}
 					},
 					"currency": {
@@ -356,34 +400,92 @@
 						  "ducats": 0,
 						  "bizant": 0,
 						  "lintar": 0
+					},
+					"perks":{
+
+					},
+					"key-skills":{
+
+					},
+					"armor":{
+						"headArmor": 0,
+						"torsoArmor": 0,
+						"rightArmArmor": 0,
+						"leftArmArmor": 0,
+						"rightLegArmor": 0,
+						"leftLegArmor": 0
+					},
+					"monsterArmor":{
+						"monsterBaseArmor": 0,
+						"resistances": "",
+						"regeneration":0,
+						"susceptibilities":""
+					},
+					"monsterBase":{
+						"dodgeBase":0,
+						"repositionBase":0,
+						"blockBase":0
+					},
+					"attacks":{
+						"attackPrimary":{
+							"value": ""
+						},
+						"attackBackup":{
+							"value": ""			
 						}
+					},
+					"abilities":{
+						"ability00":{
+							"value": ""
+						}
+					}
 			},
-			"npc":{
-					"templates":[
-						"coreStats"
-					]
-				},
-			"monsters":{
-					"templates":[
-						"coreStats",
-						"derivedStats"
-					]
-				},
 			"playercharacter":{
 					"templates":[
 						"coreStats",
 						"derivedStats",
 						"skills",
+						"coreDetails",
+						"characteristics",
 						"currency",
-						"weapons"]
-            }
+						"perks",
+						"key-skills"
+					],
+					"profession": {
+						"value": ""
+					},
+					"social standing":{
+						"value": ""
+					}
+            },
+			"mount":{
+				"templates":[
+					"coreStats",
+					"derivedStats",
+					"skills",
+					"attacks",
+					"abiilities",
+					"monsterArmor"
+				]
+			},
+			"monsters":{
+				"templates":[
+					"coreStats",
+					"derivedStats",
+					"skills",
+					"monsterArmor",
+					"monsterBase",
+					"attacks",
+					"abiilities"
+				]
+			}
         },
 	"Item":{
 		"types":[
-			"weapons",
+			"weapon",
 			"armor"
 		],
-			"weapons":{
+			"weapon":{
 						"swords":{
 							"swordName": "",
 							"swordType": "",

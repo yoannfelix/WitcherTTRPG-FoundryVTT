@@ -1,0 +1,50 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header class="sheet-header">
+        <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64"/>
+        <h1><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
+    </header>
+    <div class="sheet-content">
+        <table>
+            <tr>
+                <th>{{localize "witcherrpg.item.swordType"}}</th>
+                <th>{{localize "witcherrpg.item.swordWA"}}</th>
+                <th>{{localize "witcherrpg.item.swordRel"}}</th>
+                <th>{{localize "witcherrpg.item.swordHand"}}</th>
+                <th>{{localize "witcherrpg.item.swordRange"}}</th>
+                <th>{{localize "witcherrpg.item.swordEffect"}}</th>
+                <th>{{localize "witcherrpg.item.swordConc"}}</th>
+                <th>{{localize "witcherrpg.item.swordEN"}}</th>
+                <th>{{localize "witcherrpg.item.swordWeight"}}</th>
+            </tr>
+            <tr>
+                <td>
+                    <input name="data.swordType" type="text" value ="{{data.swordType}}" data-dtype="String" />
+                </td>
+                <td>
+                    <input name="data.swordWA" type="text" value ="{{data.swordWA}}" data-dtype="Number" />
+                </td>
+                <td>
+                    <input name="data.swordRel" type="text" value ="{{data.swordRel}}" data-dtype="Number" />
+                </td>
+                <td>
+                    <input name="data.swordHand" type="text" value ="{{data.swordHand}}" data-dtype="Number" />
+                </td>
+                <td>
+                    <input name="data.swordRange" type="text" value ="{{data.swordRange}}" data-dtype="Number" />
+                </td>
+                <td>
+                    <input name="data.swordEffect" type="text" value ="{{data.swordEffect}}" data-dtype="String" />
+                </td>
+                <td>
+                    <input name="data.swordConc" type="text" value ="{{data.swordConc}}" data-dtype="String" />
+                </td>
+                <td>
+                    <input name="data.swordEN" type="text" value ="{{data.swordEN}}" data-dtype="Number" />
+                </td>
+                <td>
+                    <input name="data.swordWeight" type="text" value ="{{data.swordWeight}}" data-dtype="float" />
+                </td>
+            </tr>
+        </table>
+    </div>
+</form>
