@@ -2,7 +2,7 @@
   "name": "witcherrpg",
   "title": "The Witcher Role-Playing Game",
   "description": "The Witcher Role-Playing Game developed by R. Talsorian Games based on CD Projekt's Witcher universe.",
-  "version": "0.0.1",
+  "version": "0.01",
   "minimumCoreVersion": "0.7.9",
   "compatibleCoreVersion": "0.7.9",
   "author": "aysonohbata",
@@ -17,15 +17,12 @@
       {
         "lang": "en",
         "name": "English",
-        "path": "lang/en.json/"
+        "path": "lang/en.json"
       }
   ],
   "socket": true,
-  "initiative": "1d10 + @reflex",
+  "initiative": "1d10",
   "gridDistance": 1.5,
   "gridUnits": "meters",
-  "primaryTokenAttribute": "health",
-  "url": "https://github.com/yoannfelix/WitcherTTRPG-FoundryVTT",
-  "manifest": "https://github.com/yoannfelix/WitcherTTRPG-FoundryVTT/blob/main/system.json",
-  "download": "https://github.com/yoannfelix/WitcherTTRPG-FoundryVTT"
+  "primaryTokenAttribute": "hp"
 }

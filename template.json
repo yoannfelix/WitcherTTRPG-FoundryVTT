@@ -8,12 +8,12 @@
 		],
 			"templates":{
 			        "coreStats": {
-						"int": {
+					"int": {
 						"min": 0,
 						"value": 0,
 						"max": 10
 					},
-						"ref": {
+					"ref": {
 						"min": 0,
 						"value": 0,
 						"max": 10
@@ -372,6 +372,7 @@
 						"age": {
 							"value": 0
 						},
+						"gender": "",
 						"clothing": {
 							"value": ""
 						},
@@ -407,7 +408,7 @@
 					"key-skills":{
 
 					},
-					"armor":{
+					"basearmor":{
 						"headArmor": 0,
 						"torsoArmor": 0,
 						"rightArmArmor": 0,
@@ -444,6 +445,7 @@
 					"templates":[
 						"coreStats",
 						"derivedStats",
+						"baseArmor",
 						"skills",
 						"coreDetails",
 						"characteristics",
@@ -451,6 +453,7 @@
 						"perks",
 						"key-skills"
 					],
+					"playerName": "Name",
 					"profession": {
 						"value": ""
 					},
@@ -459,7 +462,7 @@
 					}
             },
 			"mount":{
-				"templates":[
+					"templates":[
 					"coreStats",
 					"derivedStats",
 					"skills",
@@ -469,14 +472,14 @@
 				]
 			},
 			"monsters":{
-				"templates":[
-					"coreStats",
-					"derivedStats",
-					"skills",
-					"monsterArmor",
-					"monsterBase",
-					"attacks",
-					"abiilities"
+					"templates":[
+						"coreStats",
+						"derivedStats",
+						"skills",
+						"monsterArmor",
+						"monsterBase",
+						"attacks",
+						"abiilities"
 				]
 			}
         },

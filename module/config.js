@@ -1,15 +1,21 @@
 export const witcherrpg = {}
+witcherrpg.coreStats = {
+    none: "",
+    intelligence: "witcherrpg.coreStats.intelligence"
+
+}
+
 
 witcherrpg.swordTypes = {
     none: "",
-    swordName: "witcherrpg.item.swordName",
-    swordType: "witcherrpg.item.swordType",
-    swordWA: "witcherrpg.item.swordWA",
-    swordRel: "witcherrpg.item.swordRel",
-    swordHand: "witcherrpg.item.swordHand",
-    swordRange: "witcherrpg.item.swordRange",
-    swordEffect: "witcherrpg.item.swordEffect",
-    swordConc: "witcherrpg.item.swordConc",
-    swordEN: "witcherrpg.item.swordEN",
-    swordWeight: "witcherrpg.item.swordWeight"
+    swordName: "witcherrpg.swordStats.swordName",
+    swordType: "witcherrpg.swordStats.swordType",
+    swordWA: "witcherrpg.swordStats.swordWA",
+    swordRel: "witcherrpg.swordStats.swordRel",
+    swordHand: "witcherrpg.swordStats.swordHand",
+    swordRange: "witcherrpg.swordStats.swordRange",
+    swordEffect: "witcherrpg.swordStats.swordEffect",
+    swordConc: "witcherrpg.swordStats.swordConc",
+    swordEN: "witcherrpg.swordStats.swordEN",
+    swordWeight: "witcherrpg.swordStats.swordWeight"
 }
