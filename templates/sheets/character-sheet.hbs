@@ -1,10 +1,37 @@
 <form class="actor-sheet {{cssClass}}" autocomplete="off">
-
-    {{!-- Sheet Header --}}
     <div class="core-stats-bar">
-        <li class="charname">
-               <input name="name" type="text" value="{{actor.name}}" placeholder=""/>
-        </li>
 
+            <table>
+                <tr>
+                    <th style="text-align:center;">{{localize "witcherrpg.coreDetails.charName"}}</th>
+                    <td><input name="name" type="text" value="{{actor.name}}" placeholder=""/></td>
+                </tr>
+                <tr>
+                    <th style="text-align:center;">{{localize "witcherrpg.coreDetails.racetypes"}}</th>                  
+                    <td><input name="data.racetypes" type="text" value ="{{data.racetypes}}" data-dtype="String" /></td> 
+                </tr>
+                <tr>
+                    <th style="text-align:center;">{{localize "witcherrpg.coreDetails.chargender"}}</th>
+                    <td><input name="data.chargender" type="text" value="{{data.chargender}}"data-dtype="String"/></td>
+                </tr>
+                <tr>
+                    <th style="text-align:center;">{{localize "witcherrpg.coreDetails.charage"}}</th>
+                    <td><input name="data.charage" type="text" value="{{data.charage}}" data-dtype="Number"/></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th style="text-align:center;">{{localize "witcherrpg.coreDetails.profession"}}</th>
+                    <td><input name="data.profession" type="text" value="{{data.profession}}" data-dtype="String"/></td> 
+                </tr>
+                <tr>
+                    <th style="text-align:center;">{{localize "witcherrpg.keySkills.definingSkill"}}</th>
+                    <td><input name="data.definingSkill" type="text" value="{{data.definingSkill}}" data-dtype="String"/></td> 
+                </tr>
+            </table>
+            <div class="logo" style="float:right;">
+                <img src="/systems/witcherrpg/assets/witcherrpg.png"  width="150" height="150" style="border:0"/>
+            </div>
     </div>
+    
 </form>

@@ -63,9 +63,17 @@
 			"trapcrafting": "Trap Crafting",
 			"wildernesssurvival": "Wilderness Survival"
 		},
+		"keySkills":{
+			"definingSkill": "Defining Skill",
+			"professionalAbility": "Professional Ability"
+		},
 		"coreDetails": {
+			"charName": "Name",
 			"biography": "Biography",
 			"racetypes": "Race",
+			"chargender": "Gender",
+			"charage": "Age",
+			"profession": "Profession",
 			"raceperks00": "Race Perk 1",
 			"raceperks01": "Race Perk 2",
 			"raceperks02": "raceperks02",
@@ -76,18 +84,33 @@
 			"gender": "Gender",
 			"clothing": "Clothing"
 		},
-		"swordStats":{
+		"weaponAtt":{
 			"none": "",
-			"swordName": "Name",
-			"swordType": "Type",
-			"swordWA": "Weapon Accuracy",
-			"swordRel": "Reliability",
-			"swordHand": "Hands Required",
-			"swordRange": "Range",
-			"swordEffect": "Effect",
-			"swordConc": "Concealment",
-			"swordEN": "Enhancements",
-			"swordWeight": "Weight"
+			"weaponName": "Name",
+			"weaponType": "Weapon Type",
+			"weaponAcc": "Weapon Accuracy",
+			"weaponDMG": "Weapon Damage",
+			"weaponDMGType": "Damage Type",
+			"weaponRel": "Reliability",
+			"weaponHand": "Hands Required",
+			"weaponRange": "Range",
+			"weaponEffect": "Effects & Enchancements",
+			"weaponConc": "Concealment",
+			"weaponCost": "Cost",
+			"weaponEN": "Enhancements",
+			"weaponWeight": "Weight"
+		},
+		"weaponList":{
+			"none": "",
+			"sword": "Sword", 
+    		"smallBlade": "Small Blade",
+			"axe": "Axe",
+			"bludgeon": "Bludgeon",
+			"poleArm": "Pole Arm",
+			"staff": "Staff",
+			"thrownWeapon": "Thrown Weapon",
+			"bow": "Bow",
+			"crossBow": "CrossBow"
 		}
 
 	}
