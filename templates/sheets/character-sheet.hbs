@@ -47,9 +47,15 @@
             </tr>
         </table>
         <section class="primary-weapon">
+                <table>
+                    <tr>
+                        <th style="text-align:center;">{{localize "witcherrpg.weaponAtt.weaponName"}}</th>
+                        <th style="text-align:center;">{{localize "witcherrpg.weaponAtt.weaponRel"}}</th>
+                    </tr>
                 {{#each weapons as |weapon id|}}
                 {{> "systems/witcherrpg/templates/partials/primary-weapon-card.hbs" weapon}}
                 {{/each}}
+                </table>
         </section>
     </div>
     <div class="core-stats">
