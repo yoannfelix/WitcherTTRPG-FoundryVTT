@@ -29,9 +29,32 @@
                     <td><input name="data.definingSkill" type="text" value="{{data.definingSkill}}" data-dtype="String"/></td> 
                 </tr>
             </table>
-            <div class="logo" style="float:right;">
-                <img src="/systems/witcherrpg/assets/witcherrpg.png"  width="150" height="150" style="border:0"/>
-            </div>
+
     </div>
+    <div class="witcher-icon" style="float:middle;">
+                <img src="/systems/witcherrpg/assets/witcherrpg.png"  width="150" height="150" style="border:0"/>
+    </div>
+    <div class="actor-sidebar">
+        <img src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="120" width="120" />
+        <table>
+            <tr>
+                <th style="text-align:center;">{{localize "witcherrpg.keySkills.reputation"}}</th>
+                <td><input name="data.reputation" type="text" value="{{data.reputation}}" data-dtype="String"/></td>
+            </tr>
+            <tr>
+                <th style="text-align:center;">{{localize "witcherrpg.keySkills.improvementPoints"}}</th>
+                <td><input name="data.improvementPoints" type="text" value="{{data.improvementPoints}}" data-dtype="Number"/></td>
+            </tr>
+        </table>
+        <section class="primary-weapon">
+                {{#each weapons as |weapon id|}}
+                {{> "systems/witcherrpg/templates/partials/primary-weapon-card.hbs" weapon}}
+                {{/each}}
+        </section>
+    </div>
+    <div class="core-stats">
+        {{> "systems/witcherrpg/templates/partials/core-stat-block.hbs"}}
+    </div>
+
     
 </form>

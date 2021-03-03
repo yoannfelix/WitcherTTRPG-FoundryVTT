@@ -1,13 +1,32 @@
 export const witcherrpg = {}
 witcherrpg.coreStats = {
     none: "",
-    intelligence: "witcherrpg.coreStats.intelligence"
-
+    int: "witcherrpg.coreStats.int",
+    ref: "witcherrpg.coreStats.ref",
+    dex: "witcherrpg.coreStats.dex",
+    body: "witcherrpg.coreStats.body",
+    spd: "witcherrpg.coreStats.speed",
+    emp: "witcherrpg.coreStats.empathy",
+    cra: "witcherrpg.coreStats.craft",
+    will: "witcherrpg.coreStats.will",
+    luck: "witcherrpg.coreStats.luck",
+    stun: "witcherrpg.coreStats.stun",
+    run: "witcherrpg.coreStats.run",
+    leap: "witcherrpg.coreStats.leap",
+    hp: "witcherrpg.coreStats.hp",
+    sta: "witcherrpg.coreStats.sta",
+    enc: "witcherrpg.coreStats.enc",
+    rec: "witcherrpg.coreStats.rec",
+    punch: "witcherrpg.coreStats.punch",
+    kick: "witcherrpg.coreStats.kick"
 }
 
 witcherrpg.keySkills ={
     definingSkill: "witcherrpg.keySkills.definingSkill",
-    professionalAbility: "witcherrpg.keySkills.professionalAbility"
+    professionalAbility: "witcherrpg.keySkills.professionalAbility",
+    socialStanding: "witcherrpg.keySkills.socialStanding",
+    reputation: "witcherrpg.keySkills.reputation",
+    improvementPoints: "witcherrpg.keySkills.improvementPoints"
 }
 
 witcherrpg.coreDetails = {

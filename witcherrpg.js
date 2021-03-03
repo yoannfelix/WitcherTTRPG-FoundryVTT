@@ -4,7 +4,7 @@ import witcherPCSheet from "./module/sheets/witcherPCSheet.js";
 
 async function preloadHandlebarsTemplates(){
     const templatePaths = [
-        "systems/witcherrpg/templates/partials/character-stat-block.hbs"
+        "systems/witcherrpg/templates/partials/core-stat-block.hbs"
     ]
 
     return loadTemplates(templatePaths);

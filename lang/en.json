@@ -2,13 +2,24 @@
 	"witcherrpg":{
 		"coreStats":
 		{
-			"intelligence": "Intelligence",
-			"reflex": "Reflex",
-			"dexterity": "Dexterity",
-			"body": "Body",
-			"empathy": "Empathy",
-			"craft": "Craft",
-			"will": "Will"
+			"int": "INT",
+			"ref": "REF",
+			"dex": "DEX",
+			"body": "BODY",
+			"spd": "SPD",
+			"emp": "EMP",
+			"cra": "CRA",
+			"will": "WILL",
+			"luck": "LUCK",
+			"stun": "STUN",
+			"run": "RUN",
+			"leap": "LEAP",
+			"hp": "HP",
+			"sta": "STA",
+			"enc": "ENC",
+			"rec": "REC",
+			"punch": "Punch",
+			"kick": "Kick"
 		},
 		"derivedStats":{
 			"alchemy": "Alchemy",
@@ -43,7 +54,6 @@
 			"persuasion": "Persuasion",
 			"performance": "Performance",
 			"physique": "Physique",
-			"enc": "Encumbrance",
 			"picklock": "Picklock",
 			"riding": "Riding",
 			"ritualcrafting": "Ritual Crafting",
@@ -65,7 +75,10 @@
 		},
 		"keySkills":{
 			"definingSkill": "Defining Skill",
-			"professionalAbility": "Professional Ability"
+			"professionalAbility": "Professional Ability",
+			"socialStanding": "Social Standing",
+			"reputation": "Reputation",
+			"improvementPoints": "Improvement Points"
 		},
 		"coreDetails": {
 			"charName": "Name",

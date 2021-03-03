@@ -51,7 +51,16 @@
 					"luck": {
 						"min": 0,
 						"value": 0
-					}
+					},
+					"stun": {},
+					"run":{},
+					"leap":{},
+					"hp":{},
+					"sta":{},
+					"enc":{},
+					"rec":{},
+					"punch":{},
+					"kick":{}					
 					},
 					"derivedStats": {
 					"vigor": {
@@ -411,7 +420,10 @@
 					},
 					"keySkills":{
 						"definingSkill": "",
-						"professionalAbility": ""
+						"professionalAbility": "",
+						"socialStanding": "",
+						"reputation": "",
+						"improvementPoints": ""
 					},
 					"basearmor":{
 						"headArmor": 0,
@@ -458,13 +470,7 @@
 						"perks",
 						"key-skills"
 					],
-					"playerName": "Name",
-					"profession": {
-						"value": ""
-					},
-					"social standing":{
-						"value": ""
-					}
+					"playerName": "Name"
             },
 			"mount":{
 					"templates":[
