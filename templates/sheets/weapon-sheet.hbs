@@ -1,50 +1,84 @@
 <form class="{{cssClass}}" autocomplete="off">
-    <header class="sheet-header">
-        <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64"/>
-        <h1><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
-    </header>
+            <div class="sidebar">
+                  <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="98" width="64"/>
+            </div>
     <div class="sheet-content">
-        <table>
+            <div class="item-header">
+                 <table>
+                    <tr>
+                        <th style="text-align:left;">{{localize "witcherrpg.weaponAtt.weaponName"}}</th>
+                        <th style="text-align:right;">{{localize "witcherrpg.weaponAtt.weaponHand"}}</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h3>
+                        </td>
+                        <td>
+                            <h3 style="text-align:right;"><input name="data.weaponHand" type="text" value="{{data.weaponHand}}"/></h3>
+                        </td>              
+                    </tr>
+                </table>
+            </div>
+        <div class="item-body">
+            <table>
             <tr>
-                <th>{{localize "witcherrpg.swordStats.swordType"}}</th>
-                <th>{{localize "witcherrpg.swordStats.swordWA"}}</th>
-                <th>{{localize "witcherrpg.swordStats.swordRel"}}</th>
-                <th>{{localize "witcherrpg.swordStats.swordHand"}}</th>
-                <th>{{localize "witcherrpg.swordStats.swordRange"}}</th>
-                <th>{{localize "witcherrpg.swordStats.swordEffect"}}</th>
-                <th>{{localize "witcherrpg.swordStats.swordConc"}}</th>
-                <th>{{localize "witcherrpg.swordStats.swordEN"}}</th>
-                <th>{{localize "witcherrpg.swordStats.swordWeight"}}</th>
+                <th style="text-align:left;">{{localize "witcherrpg.weaponAtt.weaponAcc"}}</th>
+                <th style="text-align:center;">{{localize "witcherrpg.weaponAtt.weaponDMG"}}</th>   
+                <th style="text-align:center;">{{localize "witcherrpg.weaponAtt.weaponDMGType"}}</th>              
+                <th style="text-align:right;">{{localize "witcherrpg.weaponAtt.weaponType"}}</th>
             </tr>
             <tr>
                 <td>
-                    <input name="data.swordType" type="text" value ="{{data.swordType}}" data-dtype="String" />
+                    <h3></h3><input name="data.weaponAcc" type="text" value ="{{data.weaponAcc}}" data-dtype="Number" /></h3>
                 </td>
                 <td>
-                    <input name="data.swordWA" type="text" value ="{{data.swordWA}}" data-dtype="Number" />
+                    <h3 style="text-align:center;"><input name="data.weaponDMG" type="text" value ="{{data.weaponDMG}}" data-dtype="String" /></h3>
+        
                 </td>
                 <td>
-                    <input name="data.swordRel" type="text" value ="{{data.swordRel}}" data-dtype="Number" />
+                    <h3 style="text-align:center;"><input name="data.weaponDMGType" type="text" value ="{{data.weaponDMGType}}" data-dtype="String" /></h3>
+        
                 </td>
                 <td>
-                    <input name="data.swordHand" type="text" value ="{{data.swordHand}}" data-dtype="Number" />
-                </td>
-                <td>
-                    <input name="data.swordRange" type="text" value ="{{data.swordRange}}" data-dtype="Number" />
-                </td>
-                <td>
-                    <input name="data.swordEffect" type="text" value ="{{data.swordEffect}}" data-dtype="String" />
-                </td>
-                <td>
-                    <input name="data.swordConc" type="text" value ="{{data.swordConc}}" data-dtype="String" />
-                </td>
-                <td>
-                    <input name="data.swordEN" type="text" value ="{{data.swordEN}}" data-dtype="Number" />
-                </td>
-                <td>
-                    <input name="data.swordWeight" type="text" value ="{{data.swordWeight}}" data-dtype="float" />
+                    <select name="data.weaponType">
+                        {{#select data.weaponType}}
+                        {{#each config.weaponList as |name type|}}
+                        <option value="{{type}}">{{localize name}}</option>
+                        {{/each}}
+                        {{/select}}
+                    </select>
                 </td>
             </tr>
-        </table>
+            </table>
+            <h3 style="text-align:center; font-weight: bold";>{{localize "witcherrpg.weaponAtt.weaponEffect"}}</h3>
+            <textarea name="data.weaponEffect">{{data.weaponEffect}}</textarea>
+        </div>
+        <div class="item-footer">
+            <form role="form" class="form-inline">
+                <div class="form-group">
+                    <h4>{{localize "witcherrpg.weaponAtt.weaponConc"}}  </h4>
+                    <h4><input name="data.weaponConc" type="text" class="singleVal" value ="{{data.weaponConc}}" data-dtype="String" /></h4>
+                </div>
+
+            </form>            
+            <table>
+                    <tr>
+                        <th style="text-align:left;">{{localize "witcherrpg.weaponAtt.weaponCost"}}</th>
+                        <th style="text-align:center;">{{localize "witcherrpg.weaponAtt.weaponWeight"}}</th>                
+                        <th style="text-align:right;">{{localize "witcherrpg.weaponAtt.weaponRel"}}</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3><input name="data.weaponCost" type="text" value ="{{data.weaponCost}}" data-dtype="Number" /></h3>
+                        </td>
+                        <td>
+                            <h3 style="text-align:center;"><input name="data.weaponWeight" type="text" value ="{{data.weaponWeight}}" data-dtype="Number" /></h3>
+                        </td>
+                        <td>
+                            <h3 style="text-align:right;"><input name="data.weaponRel" type="text" value ="{{data.weaponRel}}" data-dtype="Number" /></h3>
+                        </td>
+                    </tr>
+            </table>
+        </div>
     </div>
 </form>

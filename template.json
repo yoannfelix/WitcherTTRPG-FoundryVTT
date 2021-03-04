@@ -51,7 +51,16 @@
 					"luck": {
 						"min": 0,
 						"value": 0
-					}
+					},
+					"stun": {},
+					"run":{},
+					"leap":{},
+					"hp":{},
+					"sta":{},
+					"enc":{},
+					"rec":{},
+					"punch":{},
+					"kick":{}					
 					},
 					"derivedStats": {
 					"vigor": {
@@ -349,12 +358,16 @@
 						  }
 					},
 					"coreDetails": {
+						"charname": "",
 						"biography": {
 							"value": ""
 						},
 						"racetypes": {
 							"value": ""
 						},
+						"charage": "",
+						"cargender": "",
+						"profession": "",
 						"raceperks00":{
 							"value": ""
 						},
@@ -405,8 +418,12 @@
 					"perks":{
 
 					},
-					"key-skills":{
-
+					"keySkills":{
+						"definingSkill": "",
+						"professionalAbility": "",
+						"socialStanding": "",
+						"reputation": "",
+						"improvementPoints": ""
 					},
 					"basearmor":{
 						"headArmor": 0,
@@ -453,13 +470,7 @@
 						"perks",
 						"key-skills"
 					],
-					"playerName": "Name",
-					"profession": {
-						"value": ""
-					},
-					"social standing":{
-						"value": ""
-					}
+					"playerName": "Name"
             },
 			"mount":{
 					"templates":[
@@ -489,28 +500,31 @@
 			"armor"
 		],
 			"weapon":{
-						"swords":{
-							"swordName": "",
-							"swordType": "",
-							"swordWA": 0,
-							"swordRel": 0,
-							"swordHand": "",
-							"swordRange": "",
-							"swordEffect": "",
-							"swordConc": "",
-							"swordEN": 0,
-							"swordWeight": 0
+						"weapon":{
+							"weaponName": "",
+							"weaponType": "swords",
+							"weaponAcc": 0,
+							"weaponDMG": 0,
+							"weaponDMGType": "",
+							"weaponRel": "",
+							"weaponHand": "",
+							"weaponRange": "",
+							"weaponEffect": 0,
+							"weaponConc": 0,
+							"weaponCost": 0,
+							"weaponEN": 0,
+							"weaponWeight": 0
 							}
 						},
 			"armor":{
-						"lightHeadArmor":{
-							"lightHeadArmorName": "",
-							"lightHeadArmorSP": 0,
-							"lightHeadArmorAE": 0,
-							"lightHeadArmorEffect": "",
-							"lightHeadArmorEV": 0,
-							"lightHeadArmorWeight": 0,
-							"lightHeadArmorPrice": 0
+						"Armor":{
+							"ArmorName": "",
+							"ArmorSP": 0,
+							"ArmorAE": 0,
+							"ArmorEffect": "",
+							"ArmorEV": 0,
+							"ArmorWeight": 0,
+							"ArmorPrice": 0
 							}
 						}
 	}

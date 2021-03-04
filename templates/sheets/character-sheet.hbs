@@ -1,10 +1,66 @@
 <form class="actor-sheet {{cssClass}}" autocomplete="off">
-
-    {{!-- Sheet Header --}}
     <div class="core-stats-bar">
-        <li class="charname">
-               <input name="name" type="text" value="{{actor.name}}" placeholder=""/>
-        </li>
+
+            <table>
+                <tr>
+                    <th style="text-align:center;">{{localize "witcherrpg.coreDetails.charName"}}</th>
+                    <td><input name="name" type="text" value="{{actor.name}}" placeholder=""/></td>
+                </tr>
+                <tr>
+                    <th style="text-align:center;">{{localize "witcherrpg.coreDetails.racetypes"}}</th>                  
+                    <td><input name="data.racetypes" type="text" value ="{{data.racetypes}}" data-dtype="String" /></td> 
+                </tr>
+                <tr>
+                    <th style="text-align:center;">{{localize "witcherrpg.coreDetails.chargender"}}</th>
+                    <td><input name="data.chargender" type="text" value="{{data.chargender}}"data-dtype="String"/></td>
+                </tr>
+                <tr>
+                    <th style="text-align:center;">{{localize "witcherrpg.coreDetails.charage"}}</th>
+                    <td><input name="data.charage" type="text" value="{{data.charage}}" data-dtype="Number"/></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th style="text-align:center;">{{localize "witcherrpg.coreDetails.profession"}}</th>
+                    <td><input name="data.profession" type="text" value="{{data.profession}}" data-dtype="String"/></td> 
+                </tr>
+                <tr>
+                    <th style="text-align:center;">{{localize "witcherrpg.keySkills.definingSkill"}}</th>
+                    <td><input name="data.definingSkill" type="text" value="{{data.definingSkill}}" data-dtype="String"/></td> 
+                </tr>
+            </table>
 
     </div>
+    <div class="witcher-icon" style="float:middle;">
+                <img src="/systems/witcherrpg/assets/witcherrpg.png"  width="150" height="150" style="border:0"/>
+    </div>
+    <div class="actor-sidebar">
+        <img src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="120" width="120" />
+        <table>
+            <tr>
+                <th style="text-align:center;">{{localize "witcherrpg.keySkills.reputation"}}</th>
+                <td><input name="data.reputation" type="text" value="{{data.reputation}}" data-dtype="String"/></td>
+            </tr>
+            <tr>
+                <th style="text-align:center;">{{localize "witcherrpg.keySkills.improvementPoints"}}</th>
+                <td><input name="data.improvementPoints" type="text" value="{{data.improvementPoints}}" data-dtype="Number"/></td>
+            </tr>
+        </table>
+        <section class="primary-weapon">
+                <table>
+                    <tr>
+                        <th style="text-align:center;">{{localize "witcherrpg.weaponAtt.weaponName"}}</th>
+                        <th style="text-align:center;">{{localize "witcherrpg.weaponAtt.weaponRel"}}</th>
+                    </tr>
+                {{#each weapons as |weapon id|}}
+                {{> "systems/witcherrpg/templates/partials/primary-weapon-card.hbs" weapon}}
+                {{/each}}
+                </table>
+        </section>
+    </div>
+    <div class="core-stats">
+        {{> "systems/witcherrpg/templates/partials/core-stat-block.hbs"}}
+    </div>
+
+    
 </form>

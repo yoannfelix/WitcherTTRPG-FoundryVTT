@@ -1,18 +1,3 @@
-.witcherrpg.sheet.item form {
-  display: flex;
-  flex-direction: row;
-}
-.witcherrpg.sheet.item .witcherrpg.sheet.item .sheet-content {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-.witcherrpg.sheet.item .witcherrpg.sheet.item .sheet-content .editor {
-  height: 100%;
-}
-.witcherrpg.sheet.item .witcherrpg.sheet.item .singleVal {
-  width: 10px;
-}
 .witcherrpg.sheet.actor form {
   display: flex;
   flex-direction: column;
