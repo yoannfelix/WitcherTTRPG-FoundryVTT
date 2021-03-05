@@ -10,15 +10,20 @@ witcherrpg.coreStats = {
     cra: "witcherrpg.coreStats.craft",
     will: "witcherrpg.coreStats.will",
     luck: "witcherrpg.coreStats.luck",
-    stun: "witcherrpg.coreStats.stun",
-    run: "witcherrpg.coreStats.run",
-    leap: "witcherrpg.coreStats.leap",
-    hp: "witcherrpg.coreStats.hp",
-    sta: "witcherrpg.coreStats.sta",
-    enc: "witcherrpg.coreStats.enc",
-    rec: "witcherrpg.coreStats.rec",
-    punch: "witcherrpg.coreStats.punch",
-    kick: "witcherrpg.coreStats.kick"
+}
+
+witcherrpg.derivedStats ={
+    stun: "witcherrpg.derivedStats.stun",
+    run: "witcherrpg.derivedStats.run",
+    leap: "witcherrpg.derivedStats.leap",
+    hp: "witcherrpg.derivedStats.hp",
+    sta: "witcherrpg.derivedStats.sta",
+    enc: "witcherrpg.derivedStats.enc",
+    rec: "witcherrpg.derivedStats.rec",
+    punch: "witcherrpg.derivedStats.punch",
+    kick: "witcherrpg.derivedStats.kick",
+    wounds: "witcherrrpg.derivedStats.wounds",
+    resolve: "witcherrrpg.derivedStats..resolve"
 }
 
 witcherrpg.keySkills ={

@@ -1,59 +1,81 @@
 <section>
-    <div class="core-stats">
-            <table>
+    <div class="core-stats-block">
+            <table class="stats-block">
                 <tr>
-                    <th style="text-align:center;">{{localize "witcherrpg.coreStats.int"}}</th>
-                    <td><input name="data.int" type="text" value="{{data.int}}" data-dtype="Number"></td>
-                    <th style="text-align:center;">{{localize "witcherrpg.coreStats.stun"}}</th>
-                    <td><input name="data.stun" type="text" value="{{data.stun}}" data-dtype="Number"></td>
+                    <th></th>
+                    <th>Max</th>
+                    <th>Temp</th>
                 </tr>
                 <tr>
-                    <th style="text-align:center;">{{localize "witcherrpg.coreStats.ref"}}</th>                  
-                    <td><input name="data.ref" type="text" value ="{{data.ref}}" data-dtype="Number" /></td>
-                    <th style="text-align:center;">{{localize "witcherrpg.coreStats.run"}}</th>
-                    <td><input name="data.run" type="text" value="{{data.run}}" data-dtype="Number"></td>
+                    <th>{{localize "witcherrpg.coreStats.int"}}</th>
+                    <td><input name="data.int" type="number" value="{{data.int}}" data-dtype="Number"</td>
+                    <td><input name="data.intTemp" type="number" value="{{data.intTemp}}" data-dtype="Number" </td>
+                </tr>
+                <tr>
+                    <th style="text-align:center;">{{localize "witcherrpg.coreStats.ref"}}</th>
+                    <td><input name="data.ref" type="number" value="{{data.ref}}" data-dtype="Number"</td>                    
+                    <td><input name="data.refTemp" type="number" value ="{{data.refTemp}}" data-dtype="Number" /></td>
                 </tr>
                 <tr>
                     <th style="text-align:center;">{{localize "witcherrpg.coreStats.dex"}}</th>
-                    <td><input name="data.dex" type="text" value="{{data.dex}}"data-dtype="Number"/></td>
-                    <th style="text-align:center;">{{localize "witcherrpg.coreStats.leap"}}</th>
-                    <td><input name="data.leap" type="text" value="{{data.leap}}" data-dtype="Number"></td>
+                    <td><input name="data.dex" type="number" value="{{data.dex}}" data-dtype="Number"</td>
+                    <td><input name="data.dexTemp" type="number" value="{{data.dexTemp}}"data-dtype="Number"/></td>
                 </tr>
                 <tr>
                     <th style="text-align:center;">{{localize "witcherrpg.coreStats.body"}}</th>
-                    <td><input name="data.body" type="text" value="{{data.body}}" data-dtype="Number"></td>
-                    <th style="text-align:center;">{{localize "witcherrpg.coreStats.hp"}}</th>
-                    <td><input name="data.hp" type="text" value="{{data.hp}}" data-dtype="Number"></td>
+                    <td><input name="data.body" type="number" value="{{data.body}}" data-dtype="Number"</td>
+                    <td><input name="data.bodyTemp" type="number" value="{{data.bodyTemp}}" data-dtype="Number"></td>
                 </tr>
                 <tr>
-                    <th style="text-align:center;">{{localize "witcherrpg.coreStats.spd"}}</th>                  
-                    <td><input name="data.spd" type="text" value ="{{data.spd}}" data-dtype="Number" /></td>
-                    <th style="text-align:center;">{{localize "witcherrpg.coreStats.sta"}}</th>
-                    <td><input name="data.sta" type="text" value="{{data.sta}}" data-dtype="Number"></td> 
+                    <th style="text-align:center;">{{localize "witcherrpg.coreStats.spd"}}</th>
+                    <td><input name="data.spd" type="number" value="{{data.spd}}" data-dtype="Number"</td>                  
+                    <td><input name="data.spdTemp" type="number" value ="{{data.spdTemp}}" data-dtype="Number" /></td>
                 </tr>
                 <tr>
                     <th style="text-align:center;">{{localize "witcherrpg.coreStats.emp"}}</th>
-                    <td><input name="data.emp" type="text" value="{{data.emp}}"data-dtype="Number"/></td>
-                    <th style="text-align:center;">{{localize "witcherrpg.coreStats.enc"}}</th>
-                    <td><input name="data.enc" type="text" value="{{data.enc}}" data-dtype="Number"></td>
+                    <td><input name="data.emp" type="number" value="{{data.emp}}" data-dtype="Number"</td>
+                    <td><input name="data.empTemp" type="number" value="{{data.empTemp}}"data-dtype="Number"/></td>
                 </tr>
                 <tr>
                     <th style="text-align:center;">{{localize "witcherrpg.coreStats.cra"}}</th>
-                    <td><input name="data.cra" type="text" value="{{data.cra}}" data-dtype="Number"></td>
-                    <th style="text-align:center;">{{localize "witcherrpg.coreStats.rec"}}</th>
-                    <td><input name="data.rec" type="text" value="{{data.rec}}" data-dtype="Number"></td>
+                    <td><input name="data.cra" type="number" value="{{data.cra}}" data-dtype="Number"</td>
+                    <td><input name="data.craTemp" type="number" value="{{data.craTemp}}" data-dtype="Number"></td>
                 </tr>
                 <tr>
-                    <th style="text-align:center;">{{localize "witcherrpg.coreStats.will"}}</th>                  
-                    <td><input name="data.will" type="text" value ="{{data.will}}" data-dtype="Number" /></td>
-                    <th style="text-align:center;">{{localize "witcherrpg.coreStats.punch"}}</th>
-                    <td><input name="data.punch" type="text" value="{{data.punch}}" data-dtype="Number"></td> 
+                    <th style="text-align:center;">{{localize "witcherrpg.coreStats.will"}}</th>
+                    <td><input name="data.will" type="number" value="{{data.will}}" data-dtype="Number"</td>                  
+                    <td><input name="data.willTemp" type="number" value ="{{data.willTemp}}" data-dtype="Number" /></td>
                 </tr>
                 <tr>
                     <th style="text-align:center;">{{localize "witcherrpg.coreStats.luck"}}</th>
-                    <td><input name="data.luck" type="text" value="{{data.luck}}"data-dtype="Number"/></td>
-                    <th style="text-align:center;">{{localize "witcherrpg.coreStats.kick"}}</th>
-                    <td><input name="data.kick" type="text" value="{{data.kick}}" data-dtype="Number"></td>
+                    <td><input name="data.luck" type="number" value="{{data.luck}}" data-dtype="Number"</td>
+                    <td><input name="data.luckTemp" type="number" value="{{data.luckTemp}}"data-dtype="Number"/></td>
+                </tr>
+        </table>
+        <table>
+                <tr>
+                    <th style="text-align:center;">{{localize "witcherrpg.derivedStats.stun"}}</th>
+                    <td><input name="data.stun" type="text" value="{{data.stun}}" data-dtype="Number"</td>
+                </tr>
+               <tr>
+                    <th style="text-align:center;">{{localize "witcherrpg.derivedStats.run"}}</th>
+                    <td><input name="data.run" type="text" value="{{data.run}}" data-dtype="Number"</td>
+                </tr>
+                <tr>
+                    <th style="text-align:center;">{{localize "witcherrpg.derivedStats.leap"}}</th>
+                    <td><input name="data.leap" type="text" value="{{data.leap}}" data-dtype="Number"</td>
+                </tr>
+                <tr>
+                    <th style="text-align:center;">{{localize "witcherrpg.derivedStats.enc"}}</th>
+                    <td><input name="data.enc" type="text" value="{{data.enc}}" data-dtype="Number"</td>
+                </tr>
+                <tr>
+                    <th style="text-align:center;">{{localize "witcherrpg.derivedStats.rec"}}</th>
+                    <td><input name="data.rec" type="text" value="{{data.rec}}" data-dtype="Number"</td>
+                </tr>
+                <tr>
+                    <th style="text-align:center;">{{localize "witcherrpg.derivedStats.resolve"}}</th>
+                    <td><input name="data.resolve" type="text" value="{{data.resolve}}" data-dtype="Number"</td>
                 </tr>
             </table>
     </div>

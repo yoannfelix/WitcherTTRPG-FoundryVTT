@@ -10,7 +10,10 @@
 			"emp": "EMP",
 			"cra": "CRA",
 			"will": "WILL",
-			"luck": "LUCK",
+			"luck": "LUCK"
+		},
+		"derivedStats":
+		{
 			"stun": "STUN",
 			"run": "RUN",
 			"leap": "LEAP",
@@ -19,9 +22,13 @@
 			"enc": "ENC",
 			"rec": "REC",
 			"punch": "Punch",
-			"kick": "Kick"
+			"kick": "Kick",
+			"wounds": "Wounds",
+			"resolve": "Resolve"
 		},
-		"derivedStats":{
+
+
+		"skills":{
 			"alchemy": "Alchemy",
 			"archery": "Archery",
 			"athletics": "Athletics",

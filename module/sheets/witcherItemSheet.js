@@ -17,7 +17,7 @@ export default class witcherItemSheet extends ItemSheet {
 		const data = super.getData();
 
 		data.config = CONFIG.witcherrpg;
-
+		console.log(data)
 		return data;
 	}
 }

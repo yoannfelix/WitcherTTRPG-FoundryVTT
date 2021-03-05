@@ -55,8 +55,6 @@
 					"stun": {},
 					"run":{},
 					"leap":{},
-					"hp":{},
-					"sta":{},
 					"enc":{},
 					"rec":{},
 					"punch":{},
@@ -98,6 +96,9 @@
 					"resolve":{
 						"min": 0,
 						"value": 0
+					},
+					"wounds":{
+						"min":0
 					}
 					},
 					"skills": {
@@ -502,15 +503,15 @@
 			"weapon":{
 						"weapon":{
 							"weaponName": "",
-							"weaponType": "swords",
+							"weaponType": "",
 							"weaponAcc": 0,
-							"weaponDMG": 0,
+							"weaponDMG": "",
 							"weaponDMGType": "",
-							"weaponRel": "",
+							"weaponRel": 0,
 							"weaponHand": "",
 							"weaponRange": "",
 							"weaponEffect": 0,
-							"weaponConc": 0,
+							"weaponConc": "",
 							"weaponCost": 0,
 							"weaponEN": 0,
 							"weaponWeight": 0
