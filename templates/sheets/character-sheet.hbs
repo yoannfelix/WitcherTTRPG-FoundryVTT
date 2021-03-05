@@ -1,66 +1,88 @@
 <form class="actor-sheet {{cssClass}}" autocomplete="off">
-    <div class="core-stats-bar">
-
-            <table>
+        <div class="core-stats">
+            <table class="stats-block">
                 <tr>
-                    <th style="text-align:center;">{{localize "witcherrpg.coreDetails.charName"}}</th>
-                    <td><input name="name" type="text" value="{{actor.name}}" placeholder=""/></td>
+                    <th></th>
+                    <th>Max</th>
+                    <th>Temp</th>
                 </tr>
                 <tr>
-                    <th style="text-align:center;">{{localize "witcherrpg.coreDetails.racetypes"}}</th>                  
-                    <td><input name="data.racetypes" type="text" value ="{{data.racetypes}}" data-dtype="String" /></td> 
+                    <th>{{localize "witcherrpg.derivedStats.hp"}}</th>
+                    <td>{{data.hp}}</td>
+                    <td><input name="data.hpTemp" type="text" value="{{data.hpTemp}}" data-dtype="Number" </td>
                 </tr>
                 <tr>
-                    <th style="text-align:center;">{{localize "witcherrpg.coreDetails.chargender"}}</th>
-                    <td><input name="data.chargender" type="text" value="{{data.chargender}}"data-dtype="String"/></td>
+                    <th>{{localize "witcherrpg.derivedStats.sta"}}</th>
+                    <td>{{data.sta}}</td>
+                    <td><input name="data.staTemp" type="text" value="{{data.staTemp}}" data-dtype="Number" </td>
                 </tr>
                 <tr>
-                    <th style="text-align:center;">{{localize "witcherrpg.coreDetails.charage"}}</th>
-                    <td><input name="data.charage" type="text" value="{{data.charage}}" data-dtype="Number"/></td>
-                </tr>
-            </table>
-            <table>
-                <tr>
-                    <th style="text-align:center;">{{localize "witcherrpg.coreDetails.profession"}}</th>
-                    <td><input name="data.profession" type="text" value="{{data.profession}}" data-dtype="String"/></td> 
+                    <th>{{localize "witcherrpg.derivedStats.resolve"}}</th>
+                    <td>{{data.resolve}}</td>
+                    <td>{{data.resolve}}</td>
                 </tr>
                 <tr>
-                    <th style="text-align:center;">{{localize "witcherrpg.keySkills.definingSkill"}}</th>
-                    <td><input name="data.definingSkill" type="text" value="{{data.definingSkill}}" data-dtype="String"/></td> 
+                    <th>{{localize "witcherrpg.derivedStats.wounds"}}</th>
+                    <td>{{data.wounds}}</td>
+                    <td><input name="data.woundsTemp" type="text" value="{{data.woundsTemp}}" data-dtype="Number" </td>
                 </tr>
             </table>
-
-    </div>
-    <div class="witcher-icon" style="float:middle;">
-                <img src="/systems/witcherrpg/assets/witcherrpg.png"  width="150" height="150" style="border:0"/>
-    </div>
-    <div class="actor-sidebar">
-        <img src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="120" width="120" />
-        <table>
-            <tr>
-                <th style="text-align:center;">{{localize "witcherrpg.keySkills.reputation"}}</th>
-                <td><input name="data.reputation" type="text" value="{{data.reputation}}" data-dtype="String"/></td>
-            </tr>
-            <tr>
-                <th style="text-align:center;">{{localize "witcherrpg.keySkills.improvementPoints"}}</th>
-                <td><input name="data.improvementPoints" type="text" value="{{data.improvementPoints}}" data-dtype="Number"/></td>
-            </tr>
-        </table>
-        <section class="primary-weapon">
-                <table>
+            {{> "systems/witcherrpg/templates/partials/core-stat-block.hbs"}}
+        </div>
+        <div class="charMenu">
+            <button class="tablinks" onclick="openCharMenu('Skills')">Skills </button>
+            <button class="tablinks" onclick="openCharMenu('Skill Tree')">Skill Tree</button>
+            <button class="tablinks" onclick="openCharMenu('Inventory')">Inventory</button>
+            <button class="tablinks" onclick="openCharMenu('Magic')">Magic</button>
+            <button class="tablinks" onclick="openCharMenu('Background')">Background</button>
+        </div>
+        <div class="side-bar">
+                <img src="{{actor.img}}" data-edit="img" title="{{actor.name}}" class="actor-img" height="120" width="120">
+                <table class="info">
                     <tr>
-                        <th style="text-align:center;">{{localize "witcherrpg.weaponAtt.weaponName"}}</th>
-                        <th style="text-align:center;">{{localize "witcherrpg.weaponAtt.weaponRel"}}</th>
+                        <th>{{localize "witcherrpg.coreDetails.charName"}}</th>
+                        <td><input name="name" type="text" value="{{actor.name}}" placeholder=""/></td>
                     </tr>
-                {{#each weapons as |weapon id|}}
-                {{> "systems/witcherrpg/templates/partials/primary-weapon-card.hbs" weapon}}
-                {{/each}}
+                    <tr>
+                        <th>{{localize "witcherrpg.coreDetails.racetypes"}}</th>                  
+                        <td><input name="data.racetypes" type="text" value ="{{data.racetypes}}" data-dtype="String"/></td> 
+                    </tr>
+                    <tr>
+                        <th>{{localize "witcherrpg.coreDetails.chargender"}}</th>
+                        <td><input name="data.chargender" type="text" value="{{data.chargender}}"data-dtype="String"/></td>
+                    </tr>
+                    <tr>
+                        <th>{{localize "witcherrpg.coreDetails.charage"}}</th>
+                        <td><input name="data.charage" type="text" value="{{data.charage}}" data-dtype="Number"/></td>
+                    </tr>
+                    <tr>
+                        <th>{{localize "witcherrpg.coreDetails.profession"}}</th>
+                        <td><input name="data.profession" type="text" value="{{data.profession}}" data-dtype="String"/></td> 
+                    </tr>
                 </table>
-        </section>
-    </div>
-    <div class="core-stats">
-        {{> "systems/witcherrpg/templates/partials/core-stat-block.hbs"}}
-    </div>
+                <table class="info">
+                    <tr>
+                        <th style="text-align:center;">{{localize "witcherrpg.keySkills.definingSkill"}}</th>
 
-    
+                    </tr>
+                    <tr>
+                        <td><input name="data.definingSkill" type="text" value="{{data.definingSkill}}" data-dtype="String"/></td>                         
+                    </tr>
+                </table>
+            <div class="weapon">
+                <section class="primary-weapon">
+                    <h4 style="text-align:center;">Primary Weapon</h4>
+                        <table>
+                            <tr>
+                                <th style="text-align:center;">{{localize "witcherrpg.weaponAtt.weaponName"}}</th>
+                                <th style="text-align:center;">{{localize "witcherrpg.weaponAtt.weaponRel"}}</th>
+                            </tr>
+                        {{#each weapons as |weapon id|}}
+                        {{> "systems/witcherrpg/templates/partials/primary-weapon-card.hbs" weapon}}
+                        {{/each}}
+                        </table>
+                </section>
+            </div>
+        </div>
+
 </form>

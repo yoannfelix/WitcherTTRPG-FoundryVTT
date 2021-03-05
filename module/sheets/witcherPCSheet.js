@@ -9,7 +9,25 @@ export default class witcherPCSheet extends ActorSheet {
 	getData(){
 		const data = super.getData();
 		data.config = CONFIG.witcherrpg;
+
 		data.weapons= data.items.filter(function (item){ return item.type == "weapon"});
+		
+		
+		
+		// Calculating Derived Stats
+		data.hp = data.hp + 2;
+		console.log(data)
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		return data;
 	}
 }

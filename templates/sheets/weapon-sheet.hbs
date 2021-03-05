@@ -1,7 +1,7 @@
 <form class="{{cssClass}}" autocomplete="off">
-            <div class="sidebar">
-                  <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="98" width="64"/>
-            </div>
+    <div class="sidebar">
+                  <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="128" width="64"/>
+    </div>
     <div class="sheet-content">
             <div class="item-header">
                  <table>
@@ -14,7 +14,7 @@
                             <h3><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h3>
                         </td>
                         <td>
-                            <h3 style="text-align:right;"><input name="data.weaponHand" type="text" value="{{data.weaponHand}}"/></h3>
+                            <h3 style="text-align:right;"><input name="data.weapon.weaponHand" type="text" value="{{data.weapon.weaponHand}}"/></h3>
                         </td>              
                     </tr>
                 </table>
@@ -29,18 +29,16 @@
             </tr>
             <tr>
                 <td>
-                    <h3></h3><input name="data.weaponAcc" type="text" value ="{{data.weaponAcc}}" data-dtype="Number" /></h3>
+                    <input name="data.weapon.weaponAcc" type="text" value ="{{data.weapon.weaponAcc}}" data-dtype="Number" />
                 </td>
                 <td>
-                    <h3 style="text-align:center;"><input name="data.weaponDMG" type="text" value ="{{data.weaponDMG}}" data-dtype="String" /></h3>
-        
+                    <h3 style="text-align:center;"><input name="data.weapon.weaponDMG" type="text" value ="{{data.weapon.weaponDMG}}" data-dtype="String" /></h3>
                 </td>
                 <td>
-                    <h3 style="text-align:center;"><input name="data.weaponDMGType" type="text" value ="{{data.weaponDMGType}}" data-dtype="String" /></h3>
-        
+                    <h3 style="text-align:center;"><input name="data.weapon.weaponDMGType" type="text" value ="{{data.weapon.weaponDMGType}}" data-dtype="String" /></h3>
                 </td>
                 <td>
-                    <select name="data.weaponType">
+                    <select name="data.weapon.weaponType">
                         {{#select data.weaponType}}
                         {{#each config.weaponList as |name type|}}
                         <option value="{{type}}">{{localize name}}</option>
@@ -51,13 +49,13 @@
             </tr>
             </table>
             <h3 style="text-align:center; font-weight: bold";>{{localize "witcherrpg.weaponAtt.weaponEffect"}}</h3>
-            <textarea name="data.weaponEffect">{{data.weaponEffect}}</textarea>
+            <textarea name="data.weapon.weaponEffect">{{data.weapon.weaponEffect}}</textarea>
         </div>
         <div class="item-footer">
             <form role="form" class="form-inline">
                 <div class="form-group">
                     <h4>{{localize "witcherrpg.weaponAtt.weaponConc"}}  </h4>
-                    <h4><input name="data.weaponConc" type="text" class="singleVal" value ="{{data.weaponConc}}" data-dtype="String" /></h4>
+                    <h4><input name="data.weapon.weaponConc" type="text" value ="{{data.weapon.weaponConc}}" data-dtype="String" /></h4>
                 </div>
 
             </form>            
@@ -69,13 +67,13 @@
                     </tr>
                     <tr>
                         <td>
-                            <h3><input name="data.weaponCost" type="text" value ="{{data.weaponCost}}" data-dtype="Number" /></h3>
+                            <h3><input name="data.weapon.weaponCost" type="text" value ="{{data.weapon.weaponCost}}" data-dtype="Number" /></h3>
                         </td>
                         <td>
-                            <h3 style="text-align:center;"><input name="data.weaponWeight" type="text" value ="{{data.weaponWeight}}" data-dtype="Number" /></h3>
+                            <h3 style="text-align:center;"><input name="data.weapon.weaponWeight" type="text" value ="{{data.weapon.weaponWeight}}" data-dtype="Number" /></h3>
                         </td>
                         <td>
-                            <h3 style="text-align:right;"><input name="data.weaponRel" type="text" value ="{{data.weaponRel}}" data-dtype="Number" /></h3>
+                            <h3 style="text-align:right;"><input name="data.weapon.weaponRel" type="text" value ="{{data.weapon.weaponRel}}" data-dtype="Number" /></h3>
                         </td>
                     </tr>
             </table>

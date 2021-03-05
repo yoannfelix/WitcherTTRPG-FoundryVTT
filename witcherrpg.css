@@ -1,6 +1,12 @@
 .witcherrpg.sheet.item form {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  padding: 0px;
+  background-color: black;
+  color: goldenrod;
+}
+.witcherrpg.sheet.item .sidebar {
+  padding: 2px;
 }
 .witcherrpg.sheet.item .witcherrpg.sheet.item .sheet-content {
   height: 100%;
@@ -10,21 +16,107 @@
 .witcherrpg.sheet.item .witcherrpg.sheet.item .sheet-content .editor {
   height: 100%;
 }
-.witcherrpg.sheet.item .witcherrpg.sheet.item .singleVal {
-  width: 10px;
-}
-.witcherrpg.sheet.actor form {
+.witcherrpg.sheet.item .witcherrpg.sheet.item .item-body {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
-.witcherrpg.sheet.actor .witcherrpg.sheet.actor .sheet-content {
-  height: 100%;
+.witcherrpg.sheet.item input {
+  border: none;
+  margin-bottom: 0.25em;
+  color: white;
+}
+.witcherrpg.sheet.item select {
+  color: white;
+}
+.witcherrpg.sheet.item textarea {
+  color: white;
+}
+.witcherrpg.sheet.item div {
+  font-family: 'Creed';
+}
+@font-face {
+  font-family: 'Creed';
+  src: url(font/Creed.ttf);
+  font-style: normal;
+}
+th {
+  text-align: center;
+}
+.witcherrpg.sheet.playercharacter {
+  /* Style the buttons inside the tab */
+  /* Change background color of buttons on hover */
+  /* Create an active/current tablink class */
+  /* Style the tab content */
+}
+.witcherrpg.sheet.playercharacter form {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: flex-star;
+  border: 0px;
+  opacity: 0.9;
+  background-image: url(assets/character-background.jpg);
+  color: gold;
 }
-.witcherrpg.sheet.actor .witcherrpg.sheet.actor .sheet-content .editor {
-  height: 100%;
+.witcherrpg.sheet.playercharacter .core-stats {
+  width: 150px;
+  border: 2px lightslategray;
 }
-.witcherrpg.sheet.actor .witcherrpg.sheet.actor .singleVal {
-  width: 10px;
+.witcherrpg.sheet.playercharacter .core-stats td {
+  text-align: center;
+}
+.witcherrpg.sheet.playercharacter .core-stats th {
+  text-align: center;
+}
+.witcherrpg.sheet.playercharacter .side-bar {
+  flex: 1;
+  width: 250px;
+}
+.witcherrpg.sheet.playercharacter .side-bar td {
+  text-align: left;
+}
+.witcherrpg.sheet.playercharacter input {
+  border: none;
+  margin-bottom: 0.25em;
+  color: white;
+}
+.witcherrpg.sheet.playercharacter img {
+  display: flex;
+  margin: auto;
+  border: none;
+}
+.witcherrpg.sheet.playercharacter div {
+  font-family: 'Creed';
+}
+.witcherrpg.sheet.playercharacter .charMenu {
+  overflow: hidden;
+  border: 1px solid #ccc;
+}
+.witcherrpg.sheet.playercharacter .charMenu button {
+  background-color: inherit;
+  color: gold;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 4px 5px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+.witcherrpg.sheet.playercharacter .charMenu button:hover {
+  background-color: #ddd;
+  color: black;
+}
+.witcherrpg.sheet.playercharacter .charMenu button.active {
+  background-color: #ccc;
+}
+.witcherrpg.sheet.playercharacter .tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+@font-face {
+  font-family: 'Creed';
+  src: url(font/Creed.ttf);
+  font-style: normal;
 }

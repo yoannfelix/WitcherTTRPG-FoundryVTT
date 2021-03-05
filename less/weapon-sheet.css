@@ -1,6 +1,12 @@
 .witcherrpg.sheet.item form {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  padding: 0px;
+  background-color: black;
+  color: goldenrod;
+}
+.witcherrpg.sheet.item .sidebar {
+  padding: 2px;
 }
 .witcherrpg.sheet.item .witcherrpg.sheet.item .sheet-content {
   height: 100%;
@@ -10,6 +16,26 @@
 .witcherrpg.sheet.item .witcherrpg.sheet.item .sheet-content .editor {
   height: 100%;
 }
-.witcherrpg.sheet.item .witcherrpg.sheet.item .singleVal {
-  width: 10px;
+.witcherrpg.sheet.item .witcherrpg.sheet.item .item-body {
+  display: flex;
+  flex-direction: row;
+}
+.witcherrpg.sheet.item input {
+  border: none;
+  margin-bottom: 0.25em;
+  color: white;
+}
+.witcherrpg.sheet.item select {
+  color: white;
+}
+.witcherrpg.sheet.item textarea {
+  color: white;
+}
+.witcherrpg.sheet.item div {
+  font-family: 'Creed';
+}
+@font-face {
+  font-family: 'Creed';
+  src: url(font/Creed.ttf);
+  font-style: normal;
 }

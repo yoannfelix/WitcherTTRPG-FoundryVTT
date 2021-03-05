@@ -1,8 +1,17 @@
 .witcherrpg.sheet.item {
     form {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        padding: 0px;
+        background-color: black;
+        color: goldenrod;
+
     }
+
+    .sidebar{
+      padding: 2px;
+    }
+    
 
     .witcherrpg.sheet.item .sheet-content {
         height: 100%;
@@ -11,9 +20,38 @@
           .editor{
             height:100%;
           }
+        ;
       }
 
-      .witcherrpg.sheet.item .singleVal {
-        width: 10px;
+
+      .witcherrpg.sheet.item .item-body {
+        display: flex;
+        flex-direction: row;
       }
+
+      input{
+        border: none;
+        margin-bottom: 0.25em;
+        color: white;
+      }
+
+      select{
+        color: white;
+      }
+
+      textarea{
+        color: white;
+      }
+
+      div {
+        font-family: 'Creed';
+      }
+}
+
+
+
+@font-face {
+  font-family: 'Creed';
+  src: url(font/Creed.ttf);
+  font-style: normal;
 }
